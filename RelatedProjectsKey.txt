@@ -1,0 +1,10 @@
+1. For Eureka Server
+	spring-eureka-server 
+	spring-eureka-client-student-service
+	spring-eureka-client-school-service
+2. For Config Server
+	spring-config-server
+	spring-config-client
+3. Hystrix
+	spring-hystrix-school-service
+	spring-hystrix-student-service

@@ -1,0 +1,33 @@
+server:
+  port: 8888
+
+eureka:
+  instance:
+    instance-id: 
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/HenokZewdie/employee-config-server  
+
+  
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    com.example.howtodoinjava: DEBUG
